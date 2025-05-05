@@ -1,0 +1,32 @@
+@use '../abstracts/mixins' as mix;
+@use '../abstracts/variables' as var;
+
+.title {
+  @include mix.title;
+}
+
+.title--big {
+  @include mix.title(44px);
+}
+
+.title--small {
+  @include mix.text(28px);
+}
+
+.text {
+  @include mix.text;
+}
+
+.text--big {
+  @include mix.text(18px);
+}
+
+.text--small {
+  @include mix.text(12px);
+}
+
+.link-text {
+  @include mix.text(18px);
+  color: var.$corTextoSecundario;
+  text-decoration: underline;
+}

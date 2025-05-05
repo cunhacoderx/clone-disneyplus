@@ -1,0 +1,12 @@
+@use './variables' as var;
+
+@mixin text($fontSize: 16px) {
+  font-size: $fontSize;
+  line-height: $fontSize + 10px;
+  color: var.$corTextoPrincipal;
+}
+
+@mixin title ($fontSize: 28px) {
+  @include text($fontSize);
+  color: var.$corTextoSecundario;
+}

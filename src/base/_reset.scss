@@ -1,0 +1,14 @@
+@use 'abstracts/variables' as var;
+@use 'base/fonts' as font;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var.$corDeFundo;
+  color: white;
+  font-family: 'Avenir', sans-serif;
+}
