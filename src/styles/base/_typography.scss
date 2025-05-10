@@ -3,26 +3,44 @@
 
 .title {
   @include mix.title;
+  @media (max-width: 768px) {
+    @include mix.title(24px);
+  }
 }
 
 .title--big {
   @include mix.title(44px);
+  @media (max-width: 768px) {
+    @include mix.title(26px);
+  }
 }
 
 .title--small {
-  @include mix.text(28px);
+  @include mix.title(28px);
+  @media (max-width: 768px) {
+    @include mix.title(22px);
+  }
 }
 
 .text {
   @include mix.text;
+  @media (max-width: 768px) {
+    @include mix.text(14px);
+  }
 }
 
 .text--big {
   @include mix.text(18px);
+  @media (max-width: 768px) {
+    @include mix.text(15px);
+  }
 }
 
 .text--small {
   @include mix.text(12px);
+  @media (max-width: 768px) {
+    @include mix.text(11px);
+  }
 }
 
 .link-text {

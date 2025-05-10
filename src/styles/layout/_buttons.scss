@@ -1,15 +1,41 @@
 @use '../abstracts/variables' as var;
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   height: 60px;
   font-size: 18px;
   color: var.$corTextoSecundario;
-  background-color: var.$corBotao;
+  background-color: var.$corBotaoPrincipal;
   text-transform: uppercase;
   border-radius: 4px;
-  margin-top: 2vw;
-  margin-bottom: 8px;
-  border: none;
+  border: 1px solid var.$corDeFundo;
+  text-decoration: none;
+  padding: 8px 14px;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: lighten(var.$corBotaoPrincipal, 3%);
+  }
+
+  &--secondary {
+    background-color: var.$corBotaoSecundario;
+    border-color: var.$corBotaoSecundario;
+
+    &:hover {
+      background-color: lighten(var.$corBotaoSecundario, 3%);
+    }
+  }
+
+  &--dark {
+    background-color: var.$corBotaoDark;
+    border-color: var.$corTextoSecundario;
+
+    &:hover {
+      background-color: var.$corTextoSecundario;
+      color: var.$corDeFundo
+    }
+  }
 }
